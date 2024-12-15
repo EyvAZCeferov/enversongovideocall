@@ -16,9 +16,7 @@ const Room = (props) => {
 
         const constraints = {
             audio: true,
-            video: {
-                deviceId: cameras[1].deviceId,
-            },
+            video: true,
         };
 
         try {
