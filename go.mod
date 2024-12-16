@@ -1,4 +1,4 @@
-module video-chat-app
+module signalling_app
 
 go 1.15
 
