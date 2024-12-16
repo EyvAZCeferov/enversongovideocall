@@ -13,7 +13,7 @@ func main() {
 	http.HandleFunc("/join", server.JoinRoomRequestHandler)
 
 	log.Println("Starting Server on Port 3290")
-	err := http.ListenAndServe(":3290", nil)
+	err := http.ListenAndServe("0.0.0.0:3290", nil)
 	if err != nil {
 		log.Fatal(err)
 	}
