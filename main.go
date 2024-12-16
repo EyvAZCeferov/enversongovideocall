@@ -1,9 +1,9 @@
 package main
 
 import (
-	"signalling_app/server"
 	"log"
 	"net/http"
+	"signalling_app/server"
 )
 
 func main() {
@@ -12,8 +12,8 @@ func main() {
 	http.HandleFunc("/create", server.CreateRoomRequestHandler)
 	http.HandleFunc("/join", server.JoinRoomRequestHandler)
 
-	log.Println("Starting Server on Port 8000")
-	err := http.ListenAndServe(":8000", nil)
+	log.Println("Starting Server on Port 3290")
+	err := http.ListenAndServe(":3290", nil)
 	if err != nil {
 		log.Fatal(err)
 	}
